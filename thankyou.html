@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You</title>
+</head>
+<body>
+  <script>
+    // Notify the parent window that the Airtable form was submitted
+    window.parent.postMessage({ airtableFormSubmitted: true }, "*");
+  </script>
+  <p>Thank you for your submission!</p>
+</body>
+</html>
